@@ -1,0 +1,37 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="72dp"
+    android:height="72dp"
+    android:viewportWidth="72"
+    android:viewportHeight="72">
+    <!-- QR Corner Top-Left -->
+    <path
+        android:fillColor="@color/text_primary"
+        android:pathData="M6,6 H30 V30 H6 Z M12,12 V24 H24 V12 Z" />
+    <path
+        android:fillColor="@color/text_primary"
+        android:pathData="M15,15 H21 V21 H15 Z" />
+    <!-- QR Corner Top-Right -->
+    <path
+        android:fillColor="@color/text_primary"
+        android:pathData="M42,6 H66 V30 H42 Z M48,12 V24 H60 V12 Z" />
+    <path
+        android:fillColor="@color/text_primary"
+        android:pathData="M51,15 H57 V21 H51 Z" />
+    <!-- QR Corner Bottom-Left -->
+    <path
+        android:fillColor="@color/text_primary"
+        android:pathData="M6,42 H30 V66 H6 Z M12,48 V60 H24 V48 Z" />
+    <path
+        android:fillColor="@color/text_primary"
+        android:pathData="M15,51 H21 V57 H15 Z" />
+    <!-- QR Data Dots -->
+    <path
+        android:fillColor="@color/text_primary"
+        android:pathData="M34,10 H38 V14 H34 Z M34,22 H38 V26 H34 Z M34,34 H38 V38 H34 Z" />
+    <path
+        android:fillColor="@color/text_primary"
+        android:pathData="M44,34 H48 V42 H44 Z M52,38 H58 V44 H52 Z M62,34 H66 V38 H62 Z" />
+    <path
+        android:fillColor="@color/text_primary"
+        android:pathData="M34,46 H42 V50 H34 Z M48,48 H54 V52 H48 Z M42,56 H50 V60 H42 Z M58,54 H64 V62 H58 Z" />
+</vector>

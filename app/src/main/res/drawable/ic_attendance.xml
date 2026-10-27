@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M38,6 H36 V2 H32 V6 H16 V2 H12 V6 H10 C7.8,6 6,7.8 6,10 V40 C6,42.2 7.8,44 10,44 H38 C40.2,44 42,42.2 42,40 V10 C42,7.8 40.2,6 38,6 Z M38,40 H10 V16 H38 V40 Z" />
+    <!-- Checkmark inside calendar -->
+    <path
+        android:fillColor="@color/secondary"
+        android:pathData="M21,34 L14,27 L16.8,24.2 L21,28.4 L31.2,18.2 L34,21 Z" />
+</vector>

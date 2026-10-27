@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Certificate / Trophy -->
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M38,4 H10 C7.8,4 6,5.8 6,8 V40 C6,42.2 7.8,44 10,44 H38 C40.2,44 42,42.2 42,40 V8 C42,5.8 40.2,4 38,4 Z M38,40 H10 V8 H38 V40 Z" />
+    <!-- Star / Ribbon -->
+    <path
+        android:fillColor="@color/secondary"
+        android:pathData="M24,14 L26.8,20.2 L33.5,20.7 L28.3,25.3 L29.9,31.8 L24,28.2 L18.1,31.8 L19.7,25.3 L14.5,20.7 L21.2,20.2 Z" />
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M16,36 H32 V38 H16 Z" />
+</vector>

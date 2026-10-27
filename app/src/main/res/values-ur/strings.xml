@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">طالب علم کارڈ ایپ</string>
+    <string name="splash_slogan">ڈیجیٹل کیمپس شناخت اور پورٹل</string>
+
+    <!-- Authentication / Login -->
+    <string name="login_title">خوش آمدید</string>
+    <string name="login_subtitle">اپنے اسٹوڈنٹ پورٹل میں سائن ان کریں</string>
+    <string name="hint_email">ای میل ایڈریس</string>
+    <string name="hint_password">پاس ورڈ</string>
+    <string name="btn_login">سائن ان کریں</string>
+    <string name="forgot_password_link">پاس ورڈ بھول گئے؟</string>
+    <string name="dont_have_account">اکاؤنٹ نہیں ہے؟</string>
+    <string name="register_link">رجسٹر کریں</string>
+    <string name="error_empty_email">برائے مہربانی اپنا ای میل درج کریں</string>
+    <string name="error_invalid_email">برائے مہربانی درست ای میل درج کریں</string>
+    <string name="error_empty_password">برائے مہربانی اپنا پاس ورڈ درج کریں</string>
+    <string name="error_invalid_credentials">غلط ای میل یا پاس ورڈ</string>
+    <string name="login_successful">لاگ ان کامیاب!</string>
+
+    <!-- Registration -->
+    <string name="register_title">اکاؤنٹ بنائیں</string>
+    <string name="register_subtitle">اپنا ڈیجیٹل کارڈ حاصل کرنے کے لیے رجسٹر کریں</string>
+    <string name="hint_full_name">پورا نام</string>
+    <string name="hint_confirm_password">پاس ورڈ کی تصدیق</string>
+    <string name="btn_register">اکاؤنٹ بنائیں</string>
+    <string name="already_have_account">پہلے سے اکاؤنٹ ہے؟</string>
+    <string name="back_to_login">سائن ان</string>
+    <string name="error_empty_name">برائے مہربانی اپنا نام درج کریں</string>
+    <string name="error_password_length">پاس ورڈ کم از کم 6 حروف کا ہونا چاہیے</string>
+    <string name="error_password_mismatch">پاس ورڈ مماثل نہیں ہیں</string>
+    <string name="registration_successful">رجسٹریشن کامیاب! برائے مہربانی لاگ ان کریں۔</string>
+
+    <!-- Forgot Password -->
+    <string name="forgot_password_title">پاس ورڈ بھول گئے</string>
+    <string name="forgot_password_subtitle">بحالی کا لنک حاصل کرنے کے لیے اپنا ای میل درج کریں۔</string>
+    <string name="btn_send_reset_link">ری سیٹ لنک بھیجیں</string>
+    <string name="reset_link_sent">ری سیٹ لنک بھیج دیا گیا (فرضی)</string>
+    <string name="back_to_login_btn">واپس لاگ ان پر جائیں</string>
+
+    <!-- Reset Password -->
+    <string name="reset_password_title">نیا پاس ورڈ سیٹ کریں</string>
+    <string name="reset_password_subtitle">اپنے اکاؤنٹ کے لیے نیا پاس ورڈ منتخب کریں۔</string>
+    <string name="hint_new_password">نیا پاس ورڈ</string>
+    <string name="btn_reset_password">پاس ورڈ تبدیل کریں</string>
+    <string name="password_reset_successful">پاس ورڈ کامیابی سے تبدیل ہو گیا۔</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">اسٹوڈنٹ ڈیش بورڈ</string>
+    <string name="welcome_format">خوش آمدید، %1$s!</string>
+    <string name="dashboard_subtitle">تعلیمی سیشن 2025–2026</string>
+    <string name="module_student_card">طالب علم کارڈ</string>
+    <string name="module_courses">کورسز</string>
+    <string name="module_attendance">حاضری</string>
+    <string name="module_results">نتائج</string>
+    <string name="module_profile">پروفائل</string>
+    <string name="module_settings">سیٹنگز</string>
+    <string name="msg_feature_coming_soon">%1$s ماڈیول جلد دستیاب ہوگا!</string>
+
+    <!-- Profile -->
+    <string name="profile_title">طالب علم پروفائل</string>
+    <string name="profile_details_header">اکاؤنٹ کی معلومات</string>
+    <string name="label_name">پورا نام</string>
+    <string name="label_email">ای میل ایڈریس</string>
+    <string name="label_student_id">اسٹوڈنٹ آئی ڈی</string>
+    <string name="label_department">شعبہ</string>
+    <string name="label_session">تعلیمی سیشن</string>
+    <string name="default_student_id">STU-2026-8942</string>
+    <string name="default_department">کمپیوٹر سائنس</string>
+    <string name="default_session">خزاں 2025 – 2029</string>
+    <string name="btn_logout">لاگ آؤٹ</string>
+    <string name="btn_view_id_card">ڈیجیٹل کارڈ دیکھیں</string>
+    <string name="logout_successful">کامیابی سے لاگ آؤٹ ہو گیا</string>
+
+    <!-- Student Card -->
+    <string name="card_title">ڈیجیٹل اسٹوڈنٹ کارڈ</string>
+    <string name="university_name">انسٹی ٹیوٹ آف ٹیکنالوجی</string>
+    <string name="card_type_student">طالب علم شناختی کارڈ</string>
+    <string name="label_student_card_name">نام</string>
+    <string name="label_student_card_id">رجسٹریشن نمبر</string>
+    <string name="label_student_card_dept">ڈگری پروگرام</string>
+    <string name="label_student_card_valid">میعاد</string>
+    <string name="label_student_card_blood">بلڈ گروپ</string>
+    <string name="default_blood_group">B+</string>
+    <string name="default_valid_thru">08/2029</string>
+    <string name="label_status">حیثیت</string>
+    <string name="status_active">فعال</string>
+    <string name="card_disclaimer">کیمپس اور لائبریری کے لیے سرکاری ڈیجیٹل شناختی کارڈ۔</string>
+
+    <!-- Accessibility / Content Descriptions -->
+    <string name="cd_app_logo">ایپ لوگو</string>
+    <string name="cd_profile_avatar">پروفائل تصویر</string>
+    <string name="cd_back_button">واپس</string>
+    <string name="cd_qr_code">کیو آر کوڈ</string>
+    <string name="cd_card_chip">سمارٹ چپ</string>
+    <string name="cd_module_icon">ماڈیول آئیکن</string>
+</resources>

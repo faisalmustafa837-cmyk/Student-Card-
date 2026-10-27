@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout Type Demonstrated: ConstraintLayout (Digital Student ID Card) -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_screen_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_large">
+
+        <!-- Top Navigation -->
+        <ImageButton
+            android:id="@+id/btnCardBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_back_button"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/text_primary" />
+
+        <TextView
+            android:id="@+id/tvCardScreenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-bold"
+            android:text="@string/card_title"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_size_title"
+            app:layout_constraintBottom_toBottomOf="@+id/btnCardBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnCardBack" />
+
+        <!-- Digital Student Card Canvas -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardStudentIdBadge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCardScreenTitle"
+            app:strokeColor="@color/card_stroke"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_student_id_card"
+                android:padding="@dimen/spacing_large">
+
+                <!-- University Header Bar -->
+                <ImageView
+                    android:id="@+id/ivCardUniversityLogo"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:contentDescription="@string/cd_app_logo"
+                    android:src="@drawable/ic_school_logo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvCardUniversityName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_small"
+                    android:fontFamily="sans-serif-black"
+                    android:letterSpacing="0.05"
+                    android:text="@string/university_name"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tvCardBadgeType"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ivCardUniversityLogo"
+                    app:layout_constraintTop_toTopOf="@+id/ivCardUniversityLogo" />
+
+                <TextView
+                    android:id="@+id/tvCardBadgeType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_small"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.1"
+                    android:text="@string/card_type_student"
+                    android:textColor="#BFDBFE"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivCardUniversityLogo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ivCardUniversityLogo"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCardUniversityName" />
+
+                <!-- Golden EMV Chip Graphic -->
+                <View
+                    android:id="@+id/viewChip"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:background="@drawable/bg_chip"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivCardUniversityLogo" />
+
+                <!-- Active Status Badge -->
+                <TextView
+                    android:id="@+id/tvCardStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_badge_active"
+                    android:fontFamily="sans-serif-bold"
+                    android:letterSpacing="0.08"
+                    android:text="@string/status_active"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/viewChip"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/viewChip" />
+
+                <!-- Student Photo Frame -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardStudentPhoto"
+                    android:layout_width="72dp"
+                    android:layout_height="88dp"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="2dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viewChip"
+                    app:strokeColor="#93C5FD"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/cd_profile_avatar"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_person"
+                        app:tint="@color/primary" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Student Details Column -->
+                <LinearLayout
+                    android:id="@+id/llCardDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/cardStudentPhoto"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardStudentPhoto"
+                    app:layout_constraintTop_toTopOf="@+id/cardStudentPhoto">
+
+                    <TextView
+                        android:id="@+id/tvCardStudentName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif-black"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        tools:text="Alex Morgan" />
+
+                    <TextView
+                        android:id="@+id/tvCardStudentId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-bold"
+                        android:letterSpacing="0.05"
+                        android:textColor="#BFDBFE"
+                        android:textSize="13sp"
+                        tools:text="ID: STU-2026-8942" />
+
+                    <TextView
+                        android:id="@+id/tvCardDepartment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        tools:text="Dept: Computer Science &amp; IT" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvCardValidDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:textColor="#93C5FD"
+                            android:textSize="11sp"
+                            tools:text="Valid: 08/2029" />
+
+                        <TextView
+                            android:id="@+id/tvCardBlood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/spacing_medium"
+                            android:fontFamily="sans-serif"
+                            android:textColor="#93C5FD"
+                            android:textSize="11sp"
+                            tools:text="Blood: B+" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Divider Line -->
+                <View
+                    android:id="@+id/cardDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:background="#3B82F6"
+                    app:layout_constraintTop_toBottomOf="@+id/cardStudentPhoto" />
+
+                <!-- Bottom Bar: QR Code + Verification Note -->
+                <ImageView
+                    android:id="@+id/ivCardQr"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:background="@drawable/bg_chip"
+                    android:contentDescription="@string/cd_qr_code"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_qr_code"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardDivider"
+                    app:tint="@color/text_primary" />
+
+                <TextView
+                    android:id="@+id/tvCardFooterNote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/card_disclaimer"
+                    android:textColor="#BFDBFE"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivCardQr"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ivCardQr"
+                    app:layout_constraintTop_toTopOf="@+id/ivCardQr" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Informational Notice Below Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSecurityInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            app:cardBackgroundColor="@color/surface"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardStudentIdBadge"
+            app:strokeColor="@color/card_stroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_medium">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:contentDescription="@string/cd_module_icon"
+                    android:src="@drawable/ic_check_circle" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/login_successful"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/text_size_body" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
