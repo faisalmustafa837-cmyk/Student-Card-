@@ -35,3 +35,4 @@
         android:fillColor="@color/text_primary"
         android:pathData="M34,46 H42 V50 H34 Z M48,48 H54 V52 H48 Z M42,56 H50 V60 H42 Z M58,54 H64 V62 H58 Z" />
 </vector>
+

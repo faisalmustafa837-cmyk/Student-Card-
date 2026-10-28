@@ -144,3 +144,4 @@ The application provides simulated local authentication. You can sign in immedia
 - [x] Bonus `res/values-ur/strings.xml` included for multi-language support
 - [x] Light and Dark mode color/theme definitions (`values/colors.xml` and `values-night/colors.xml`)
 - [x] Clean commit history and Android `.gitignore` included
+

@@ -106,3 +106,4 @@ public class AuthManager {
         return DEFAULT_NAME;
     }
 }
+

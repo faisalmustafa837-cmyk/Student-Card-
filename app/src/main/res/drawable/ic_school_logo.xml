@@ -23,3 +23,4 @@
         android:fillColor="@color/primary"
         android:pathData="M48,70 L20,74 C16,74.5 12,77.5 12,82 L48,80 L84,82 C84,77.5 80,74.5 76,74 Z" />
 </vector>
+

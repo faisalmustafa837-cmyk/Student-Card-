@@ -147,3 +147,4 @@ public class DashboardActivity extends AppCompatActivity {
         Toast.makeText(this, getString(R.string.msg_feature_coming_soon, moduleName), Toast.LENGTH_SHORT).show();
     }
 }
+
